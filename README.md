@@ -11,7 +11,7 @@ Install [.NET Core 2.1.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/
 **IDE:** Visual Studio
 
 1. **Command Line:**
-    1. Navigate to web project folder and 'dotnet run'
+    1. Navigate to web project folder and `dotnet run`
 1. **Visual Studio:**
     * Run IIS Express on Debug or Release
 1. **IIS Deployment (Development):** Contained publish to IIS with Core .NET 2.1 Hosting Bundle (Capable of cross platform deployment)
