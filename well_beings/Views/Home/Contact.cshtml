@@ -1,0 +1,33 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Contact Us";
+    var message = HttpContextAccessor.HttpContext.Session.GetString("MessageSent");
+}
+<div class="container" id="contact-section">
+    <h2>@ViewData["Title"]</h2>
+    <hr />
+    @if  (message != null)
+    {
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                Message have been successfully retrieved!
+            </div>
+        </div>
+    }
+    <form method="post">
+        <div class="form-group">
+            <label class="control-label">Full Name</label>
+            <input name="input-name" type="text" class="form-control" />
+            <br />
+            <label class="control-label">Email</label>
+            <input name="input-email" type="text" class="form-control" />
+            <br />
+            <label class="control-label">Message</label>
+            <textarea name="input-message" rows="4" class="form-control"></textarea>
+        </div>
+        <br />
+        <input type="submit" class="btn btn-primary" value="Send" />
+    </form>
+</div>
+

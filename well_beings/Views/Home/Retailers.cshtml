@@ -1,0 +1,22 @@
+﻿@model IEnumerable<well_beings.Models.Retailer>
+@{
+    ViewData["Title"] = "Retailers";
+}
+<div id="retailer-section" class="container-fluid">
+    <div class="col-sm-3 divider" id="retailers-info">
+        <h2>@ViewData["Title"]</h2>
+        @foreach (var retailer in Model)
+        {
+            <br />
+            <strong>@retailer.Name</strong>
+            <div>@retailer.Address</div>
+            <div> @retailer.City, @retailer.ProvinceState</div>
+            <div> @retailer.Country @retailer.PostalCode</div>
+            <div>Tel: @retailer.Telephone</div>
+        }
+    </div>
+    <!-- Google maps api -- static image to mock -->
+    <div class="col-sm-9 divider">
+        <img src="~/images/maps.png" />
+    </div>
+</div>

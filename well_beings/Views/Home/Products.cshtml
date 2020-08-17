@@ -1,0 +1,53 @@
+﻿@model IEnumerable<well_beings.Models.Product>
+@{
+    ViewData["Title"] = "Products";
+}
+<div class="container" id="product-section">
+    <br />
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon3">Search Product</span>
+        <input type="text" class="form-control" id="filter-product" aria-describedby="basic-addon3">
+    </div>
+    <br />
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4 col-sm-6">
+            <div class="product-card" id="@product.Name">
+                <div class="img-wrapper">
+                    <img src="@product.DisplayImage" alt="@product.Name" />
+                </div>
+                <div class="product-info">
+                    <h2>@product.Name</h2>
+                    <h4>$@product.Price.ToString("N2")</h4>
+                    @for (var i = 0; i < 5; i++)
+                    {
+                        <span class="glyphicon glyphicon-star fa-4x"></span>
+                    }
+                    <br />
+                    <br />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<br />
+@section Scripts{ 
+<script>
+    $(document).ready(function () {
+        // input filter by title
+        $("#filter-product").keyup(function () {
+            $(".product-card").each(function () {
+                if (this.id.indexOf($("#filter-product").val()) >= 0) {
+                    $("#" + this.id).parent().show();
+                } else {
+                    $("#" + this.id).parent().hide();
+                }
+            });
+        });
+
+        $(".img-wrapper").hover(function () {
+            console.log("hello");
+        });
+    });
+</script>
+}

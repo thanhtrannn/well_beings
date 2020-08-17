@@ -1,0 +1,112 @@
+﻿
+* {
+    font-family: "Open Sans", serif;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+/* Navigation Section */
+#navigation_section {
+    padding: 20px;
+    background-color: #0A215A;
+    color: white;
+}
+#navigation_section li a{
+    color: white;
+}
+#navigation_section li a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    background-color: transparent !important;
+}
+.nav-active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+.navbar-default .navbar-collapse {
+    border-color:black;
+}
+.icon--white{
+    background-color: white !important;
+}
+
+/* Index Section */
+.landing-page-header {
+    color: white !important;
+    font-size: 7rem;
+    font-weight: bold;
+    padding: 25px;
+    text-shadow: black 1px 1px;
+}
+#landing-page-overlay {
+    padding: 25px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+#landing-page-overlay h2{
+    font-weight: bolder;
+}
+#landing-page-overlay p {
+    line-height: 40px;
+    opacity: .9;
+}
+
+/* Products Section */
+.product-card {
+    margin: 10px;
+    border-radius: 10px;
+    color: black;
+}
+.product-card h2 {
+    font-weight: bold;
+}
+.product-card img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+.product-card img:hover {
+    transition: all 1s;
+    transform: scale(1.2);
+}
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+/* Retailers Section */
+#retailer-section{
+    height:100%;
+}
+#retailer-section img {
+    width: 100%;
+    height: auto;
+}
+#retailers-info {
+    overflow: auto;
+    height: 75vh;
+}
+.divider {
+    margin: 15px 0px;
+}
+/* Contact Section */
+#contact-section{
+    padding: 25px;
+}
+
+/* Footer section */
+#footer_section {
+    background-color: #0A215A;
+    color: grey;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    bottom: 0px;
+    position: fixed;
+}
