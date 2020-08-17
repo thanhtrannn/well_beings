@@ -1,1 +1,121 @@
-﻿*{font-family:"Open Sans",serif}body,html{height:100%}body{color:#fff;padding:0;margin:0;width:100%;height:100%}.body-content{padding:0;margin:0}#navigation_section{padding:20px;background-color:#0a215a;color:#fff}#navigation_section li a{color:#fff}#navigation_section li a:hover{border-bottom:2px solid #fff;background-color:transparent!important}.nav-active{border-bottom:2px solid #fff}.landing-page-header{color:#fff!important;font-size:7rem;font-weight:700;padding:25px}#landing-page-overlay{padding:25px;color:#fff;background:rgba(0,0,0,.5)}#landing-page-overlay h2{font-weight:bolder}#landing-page-overlay p{line-height:40px;opacity:.9}.product-card{margin:10px;background:#0a215a;border-radius:10px}.product-card img{border-radius:10px 10px 0 0;width:100%;height:auto}.product-info{padding:10px}#retailer-section{height:100%}#retailer-section img{width:100%;height:auto}#retailers-info{overflow:scroll;height:75vh}#contact-section{padding:25px}#footer_section{background-color:#0a215a;color:#fff;width:100%;padding:15px;text-align:center}#footer_section p{margin:0}
+﻿* {
+    font-family: "Open Sans",serif
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px
+}
+
+#navigation_section {
+    padding: 20px;
+    background-color: #0A215A;
+    color: #fff
+}
+
+    #navigation_section li a {
+        color: #fff
+    }
+
+        #navigation_section li a:hover {
+            font-weight: 700;
+            border-bottom: 2px solid #fff;
+            background-color: transparent !important
+        }
+
+.nav-active {
+    font-weight: 700;
+    border-bottom: 2px solid #fff
+}
+
+.navbar-default .navbar-collapse {
+    border-color: #000
+}
+
+.icon--white {
+    background-color: #fff !important
+}
+
+.landing-page-header {
+    color: #fff !important;
+    font-size: 7rem;
+    font-weight: 700;
+    padding: 25px;
+    text-shadow: #000 1px 1px
+}
+
+#landing-page-overlay {
+    padding: 25px;
+    color: #fff;
+    background: rgba(0,0,0,0.5)
+}
+
+    #landing-page-overlay h2 {
+        font-weight: bolder
+    }
+
+    #landing-page-overlay p {
+        line-height: 40px;
+        opacity: .9
+    }
+
+.product-card {
+    margin: 10px;
+    border-radius: 10px;
+    color: #000
+}
+
+    .product-card h2 {
+        font-weight: 700
+    }
+
+    .product-card img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto
+    }
+
+        .product-card img:hover {
+            transition: all 1s;
+            transform: scale(1.2)
+        }
+
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: auto
+}
+
+#retailer-section {
+    height: 100%
+}
+
+    #retailer-section img {
+        width: 100%;
+        height: auto
+    }
+
+#retailers-info {
+    overflow: auto;
+    height: 75vh
+}
+
+.divider {
+    margin: 15px 0
+}
+
+#contact-section {
+    padding: 25px
+}
+
+#footer_section {
+    background-color: #0A215A;
+    color: grey;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    bottom: 0;
+    position: fixed
+}
